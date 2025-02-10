@@ -26,7 +26,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -v -a -installsuffix cgo -o swag cmd/swag/
 
 
 ######## Start a new stage from scratch #######
-FROM --platform=$TARGETPLATFORM golang:1.21-alpine
+FROM --platform=$TARGETPLATFORM golang:1.23.4-alpine
 
 WORKDIR /code/
 
